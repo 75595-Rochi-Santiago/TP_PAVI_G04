@@ -47,217 +47,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccesoADatos\AD_Barrios.cs" />
-    <Compile Include="AccesoADatos\AD_Departamentos.cs" />
+    <Compile Include="Formularios\ABM_Dueños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Dueños.Designer.cs">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM_TipoDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_TipoDocumentos.Designer.cs">
+      <DependentUpon>ABM_TipoDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoADatos\AD_TipoDocumentos.cs" />
+    <Compile Include="AccesoADatos\AD_Dueños.cs" />
+    <Compile Include="AccesoADatos\AD_Edificios.cs" />
     <Compile Include="AccesoADatos\AD_Empleados.cs" />
-    <Compile Include="AccesoADatos\AD_Escribanos.cs" />
-    <Compile Include="AccesoADatos\AD_Localidades.cs" />
-    <Compile Include="AccesoADatos\AD_Monedas.cs" />
-    <Compile Include="AccesoADatos\AD_Propiedades.cs" />
-    <Compile Include="AccesoADatos\AD_TiposOperaciones.cs" />
-    <Compile Include="AccesoADatos\AD_TiposPropiedades.cs" />
-    <Compile Include="Entidades\Departamento.cs" />
+    <Compile Include="Formularios\ABM_Edificio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM_Edificio.Designer.cs">
+      <DependentUpon>ABM_Edificio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Dueño.cs" />
+    <Compile Include="Entidades\Edificio.cs" />
     <Compile Include="Entidades\Empleados.cs" />
-    <Compile Include="Entidades\Escribano.cs" />
-    <Compile Include="Entidades\Moneda.cs" />
-    <Compile Include="Entidades\Localidades.cs" />
-    <Compile Include="Entidades\Propiedad.cs" />
-    <Compile Include="Formularios\frmAltaEmpleado.cs">
+    <Compile Include="Entidades\TipoDeDocumento.cs" />
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmAltaEmpleado.Designer.cs">
-      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmAltaEscribanos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmAltaEscribanos.Designer.cs">
-      <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmAltaMoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmAltaMoneda.Designer.cs">
-      <DependentUpon>frmAltaMoneda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmAltaLocalidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmAltaLocalidad.Designer.cs">
-      <DependentUpon>frmAltaLocalidad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmAltaPropiedades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmAltaPropiedades.Designer.cs">
-      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroEmpleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroEmpleados.Designer.cs">
-      <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroEscribanos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroEscribanos.Designer.cs">
-      <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroMoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroMoneda.Designer.cs">
-      <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroLocalidades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroLocalidades.Designer.cs">
-      <DependentUpon>frmFiltroLocalidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroPropiedades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroPropiedades.Designer.cs">
-      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmAltaDepartamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmAltaDepartamento.Designer.cs">
-      <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroDepartamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmFiltroDepartamentos.Designer.cs">
-      <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmLogin.Designer.cs">
+    <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmModificarEliminarEscribano.cs">
+    <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmModificarEliminarEscribano.Designer.cs">
-      <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarMoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarMoneda.Designer.cs">
-      <DependentUpon>frmModificarEliminarMoneda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarPropiedad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarPropiedad.Designer.cs">
-      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarDepartamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEliminarDepartamento.Designer.cs">
-      <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmModificarEmpleado.Designer.cs">
-      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmModificarLocalidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmModificarLocalidad.Designer.cs">
-      <DependentUpon>frmModificarLocalidad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmPrincipal.Designer.cs">
+    <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_Alta_Dueño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_Alta_Dueño.Designer.cs">
+      <DependentUpon>frm_Alta_Dueño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_Alta_Edificio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_Alta_Edificio.Designer.cs">
+      <DependentUpon>frm_Alta_Edificio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\frmAltaEmpleado.resx">
-      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Dueños.resx">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmAltaEscribanos.resx">
-      <DependentUpon>frmAltaEscribanos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Edificio.resx">
+      <DependentUpon>ABM_Edificio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmAltaMoneda.resx">
-      <DependentUpon>frmAltaMoneda.cs</DependentUpon>
-    </EmbeddedResource>  
-    <EmbeddedResource Include="Formularios\frmAltaLocalidad.resx">
-      <DependentUpon>frmAltaLocalidad.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_TipoDocumentos.resx">
+      <DependentUpon>ABM_TipoDocumentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmAltaPropiedades.resx">
-      <DependentUpon>frmAltaPropiedades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFiltroEmpleados.resx">
-      <DependentUpon>frmFiltroEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFiltroEscribanos.resx">
-      <DependentUpon>frmFiltroEscribanos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFiltroMoneda.resx">
-      <DependentUpon>frmFiltroMoneda.cs</DependentUpon>
-    </EmbeddedResource>  
-    <EmbeddedResource Include="Formularios\frmFiltroLocalidades.resx">
-      <DependentUpon>frmFiltroLocalidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFiltroPropiedades.resx">
-      <DependentUpon>frmFiltroPropiedades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmAltaDepartamento.resx">
-      <DependentUpon>frmAltaDepartamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmFiltroDepartamentos.resx">
-      <DependentUpon>frmFiltroDepartamentos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmLogin.resx">
+    <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarEliminarEscribano.resx">
-      <DependentUpon>frmModificarEliminarEscribano.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarEliminarMoneda.resx">
-      <DependentUpon>frmModificarEliminarMoneda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarEliminarPropiedad.resx">
-      <DependentUpon>frmModificarEliminarPropiedad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarEliminarDepartamento.resx">
-      <DependentUpon>frmModificarEliminarDepartamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarEmpleado.resx">
-      <DependentUpon>frmModificarEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmModificarLocalidad.resx">
-      <DependentUpon>frmModificarLocalidad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmPrincipal.resx">
+    <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_Alta_Dueño.resx">
+      <DependentUpon>frm_Alta_Dueño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_Alta_Edificio.resx">
+      <DependentUpon>frm_Alta_Edificio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -266,45 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\ABM_Departamentos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_Building_3870065.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\ABM_Departamentos.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_add1-_32378.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_reload_46828.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_2_2739118.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_Cancel_728918.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_trash-bin-garbage-delete-rubbish-waste_3643729.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_compose_1055085.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconos1\iconfinder_floppy_285657.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buscar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\casa_inmobiliaria.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_user-group_285648.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
